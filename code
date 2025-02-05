@@ -1,0 +1,19 @@
+def main():
+    print("Starting The Code Challenge")
+
+    try:
+        # Declare Any main() Variables (Not Global)
+        test_value = int(input("Give a Number :3 : "))  
+        print("The Number is:", test_value)
+
+    except ValueError:  # Specific error first
+        print("Error :v : Please enter a NUMBER!! >:v")
+
+    except Exception:  # Generic error last
+        print("You didn't enter a number :(")
+
+    finally:
+        print("Ending The Code Challenge")
+
+if __name__ == "__main__":
+    main()
